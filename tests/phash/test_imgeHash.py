@@ -47,57 +47,63 @@ def getWHash(img1,img2):
 
 print ('---------感知哈希------------')
 
-result=getPHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/b.jpg')
+imgA='/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/phash/a.jpg'
+imgB='/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/phash/b.jpg'
+imgC='/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/phash/c.jpg'
+imgD='/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/phash/d.jpg'
+imgAH='/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/phash/ah.jpg'
+
+result=getPHash (imgA,imgB)
 print ('a 和 b 对比，b复制的:'+str(result))
 
-result=getPHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/c.jpg')
+result=getPHash (imgA,imgC)
 print ('a 和 c 对比，c是裁剪的:'+str(result))
 
-result=getPHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/d.jpg')
+result=getPHash (imgA,imgD)
 print ('a 和 d 对比，d裁剪部分:'+str(result))
 
-result=getPHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/ah.jpg')
+result=getPHash (imgA,imgAH)
 print ('a 和 ah 对比，图片内容完全不一致:'+str(result))
 
 
 print ('---------均值哈希------------')
 
-result=getAHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/b.jpg')
+result=getAHash (imgA,imgB)
 print ('a 和 b 对比，b复制的:'+str(result))
 
-result=getAHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/c.jpg')
+result=getAHash (imgA,imgC)
 print ('a 和 c 对比，c是裁剪的:'+str(result))
 
-result=getAHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/d.jpg')
+result=getAHash (imgA,imgD)
 print ('a 和 d 对比，d裁剪部分:'+str(result))
 
-result=getAHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/ah.jpg')
+result=getAHash (imgA,imgAH)
 print ('a 和 ah 对比，图片内容完全不一致:'+str(result))
 
 print ('---------差值哈希------------')
 
-result=getDHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/b.jpg')
+result=getDHash (imgA,imgB)
 print ('a 和 b 对比，b复制的:'+str(result))
 
-result=getDHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/c.jpg')
+result=getDHash (imgA,imgC)
 print ('a 和 c 对比，c是裁剪的:'+str(result))
 
-result=getDHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/d.jpg')
+result=getDHash (imgA,imgD)
 print ('a 和 d 对比，d裁剪部分:'+str(result))
 
-result=getDHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/ah.jpg')
+result=getDHash (imgA,imgAH)
 print ('a 和 ah 对比，图片内容完全不一致:'+str(result))
 
 print ('---------小波哈希------------')
 
-result=getWHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/b.jpg')
+result=getWHash (imgA,imgB)
 print ('a 和 b 对比，b复制的:'+str(result))
 
-result=getWHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/c.jpg')
+result=getWHash (imgA,imgC)
 print ('a 和 c 对比，c是裁剪的:'+str(result))
 
-result=getWHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/d.jpg')
+result=getWHash (imgA,imgD)
 print ('a 和 d 对比，d裁剪部分:'+str(result))
 
-result=getWHash ('/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/a.jpg','/Users/lihongxu6/IdeaProjectsGit/python-algorithm/tests/ah.jpg')
+result=getWHash (imgA,imgAH)
 print ('a 和 ah 对比，图片内容完全不一致:'+str(result))
